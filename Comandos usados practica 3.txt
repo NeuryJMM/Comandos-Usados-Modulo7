@@ -1,3 +1,5 @@
+Comandos utilizados, práctica laboratorio 7.3: Controlador de Dominios y Compartir Archivos.
+
 1. Preparación del sistema
 --------------------------
 hostnamectl set-hostname dc1.inet (NO PUEDES TENER EL MISMO HOSTNAME QUE EL DOMINIO O DARÁ ERROR)
@@ -128,6 +130,7 @@ sudo setenforce 0
 
 # Para verificar el estado (debería decir "Permissive")
 sestatus
+
 
 
 
