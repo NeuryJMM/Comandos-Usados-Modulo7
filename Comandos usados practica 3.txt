@@ -11,8 +11,8 @@ hostname -f
 
 #Poner al día el sistema e instalar paquetes necesarios#
 dnf -y update
-dnf -y install epel-release
-sudo dnf config-manager --set-enabled powertools
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms
 dnf update
 sudo dnf makecache
 dnf -y install wget tar gcc make python3-devel
@@ -130,6 +130,7 @@ sudo setenforce 0
 
 # Para verificar el estado (debería decir "Permissive")
 sestatus
+
 
 
 
